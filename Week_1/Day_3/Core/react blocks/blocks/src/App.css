@@ -1,0 +1,49 @@
+.header{
+  background-color: #6BA856;
+  width: 100%;
+  height: 100px;
+}
+.content{
+  background-color: #DF6768;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 700px;
+}
+.nav{
+  background-color: #70A8D9;
+  width: 20%;
+  height: 600px;
+}
+.yellow{
+  display: flex;
+  width: 97%;
+  margin: 20px;
+  gap: 30px;
+}
+.sub{
+  background-color: yellow;
+  width: 100%;
+  height: 500px;
+}
+.app{
+  background-color: #dddddd;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 98%;
+  height: 100%;
+  padding: 20px;
+}
+.adv{
+  background-color: #B4A7D4;
+  width: 97%;
+  height: 400px;
+  margin: 20px;
+
+
+}
+.navmain{
+  display: flex;
+  gap: 10px;
+}
