@@ -22,7 +22,7 @@ const BooksController={
     },
     ReadOne: async (req, res) => {
         try {
-            const book = await Cake.findById(req.params.id)
+            const book = await Books.findById(req.params.id)
             res.json(book)
         } catch (err) {
             console.log(err)
@@ -44,7 +44,7 @@ const BooksController={
     },
     Delete: async (req, res) => {
         try {
-            const Deletebokk = await Books.findByIdAndDelete(req.params.id)
+            const Deletebook = await Books.findByIdAndDelete(req.params.id)
             res.json({ response: " book has been deleted " })
         } catch (err) {
             console.log(err)

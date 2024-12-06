@@ -20,8 +20,7 @@ const Form = () => {
                 </div>
                 <div>
                     <label htmlFor="lastName">Last Name:</label>
-                    <input type="text" name="lastName" onChange={(e) => changeHandler(e)}
-/>
+                    <input type="text" name="lastName" onChange={(e) => changeHandler(e)}/>
                 </div>
                 <div>
                     <label htmlFor="email">Email:</label>
