@@ -1,0 +1,25 @@
+.btn-dark{
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #40C5FE ;
+  border: none;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 5px solid black;
+  padding: 10px;
+}
+.nav{
+  background: #EEEEEE; 
+  padding: "10px" ;
+  ;
+}
+.actions{
+  display: flex;
+  flex-direction: column;
+}
