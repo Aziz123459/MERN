@@ -1,0 +1,16 @@
+<div class="container  d-flex flex-column align-items-center a shadow  mt-5 p-5 w  bg-white rounded col-5">
+    <form #dataForm="ngForm" (ngSubmit)="onSubmit(dataForm.value)">
+        <label for="">Product name:</label>
+        <input type="text" name="name"  class="form-control" ngModel>
+        <label for="">Rating</label>
+        <input type="number" name="rating"  class="form-control" ngModel>
+        <label for="">FeedBack</label>
+        <textarea name="feedback" id="" class="form-control" ngModel></textarea>
+        <label for="">email</label>
+        <input type="text" name="email" class="form-control"  ngModel>
+        <label for="">would recommend</label>
+        <input type="radio" name="rec" value="yes" ngModel>yes
+        <input type="radio" name="rec" value="no" ngModel>no
+        <button type="submit" [disabled]="dataForm.invalid" class="btn btn-success">send</button>
+    </form>
+</div>

@@ -1,0 +1,18 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Number of Pages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let Student of allStudents">
+      <td>{{ Student.id }}</td>
+      <td>{{ Student.name }}</td>
+      <td>{{ Student.age }}</td>
+    </tr>
+  </tbody>
+</table>
+<app-my-component (notifyParent)="onNotify($event)" [course]="course"></app-my-component>

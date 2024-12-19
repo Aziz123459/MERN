@@ -1,0 +1,20 @@
+<div class="container  d-flex flex-column align-items-center a shadow  mt-5 p-5 w  bg-white rounded col-5">
+    <form #dataForm="ngForm" (ngSubmit)="onSubmit(dataForm.value)">
+        <label for="" >Full name :</label>
+        <input type="text" name="FullName" class="form-control" ngModel>
+        <label for="">Age :</label>
+        <input type="number" name="age"  class="form-control" ngModel>
+        <label for="">Gender :</label>
+        <select name="Gender" id="" class="form-select" ngModel >
+            <option value="male" >Male</option>
+            <option value="female">Female</option>
+        </select>
+        <label for="">Email:</label>
+        <input type="text" name="Email" class="form-control" ngModel>
+        <div class="form-check">
+            <label for="">Subscribed</label>
+            <input type="checkbox"  name="Subscribed" class="form-check-input" ngModel>
+        </div>
+        <button type="submit" [disabled]="dataForm.invalid" class="btn btn-success">Create</button>
+    </form>
+</div>

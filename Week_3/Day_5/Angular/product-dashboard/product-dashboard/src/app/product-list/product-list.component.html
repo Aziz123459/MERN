@@ -1,0 +1,23 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngFor="let item of products" class="d-flex justify-content-center gap-5 mb-4">
+    <p>{{ item.name }} - {{ item.price+'$'}}</p>
+    <button class="btn btn-primary" (click)="selectProduct(item)">View Details</button>
+  </div>
+  <app-product-details [product]="selectedProduct"></app-product-details>
